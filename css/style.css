@@ -1,0 +1,56 @@
+/* page index   */
+@font-face
+{
+font-family: 'Dayrom';
+src: url('polices/dayrom.eot');
+src: url('polices/dayrom.eot?#iefix') format('embeddedopentype'),
+url('polices/dayrom.woff') format('woff'),
+url('polices/dayrom.ttf') format('truetype'),
+url('polices/dayrom.svg#Dayrom') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+ body{
+   border: 0px;
+   font-family: 'Dayrom';
+
+ }
+ h1{
+   text-align: center;
+ }
+ nav a {
+   text-decoration: none;
+   color: #ffff;
+   text-transform: uppercase;
+
+
+ }
+.important{
+   background-color: blue;
+   color: #ffff;
+   border-radius: 10px 20px;
+   font-size: 4rem;
+   font-weight: bold;
+}
+.bloc1{
+  margin-right: 20px;
+}
+ /* page connexion   */
+
+ .myform1{
+  background-color: aliceblue;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  height: 240%;
+ }
+ .con{
+  display: flex;
+  justify-content: center;
+ }
+ .bloc1{
+  font-size: 20px;
+  margin: 20px;
+ }
