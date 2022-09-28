@@ -1,5 +1,5 @@
 # PROJET1
-creation site pur publication des resultats
+creation site pour publication des resultats
  l'interêt que nous mettons à ce projet est celui de mettre en ligne a publication des résultats des étudiants d'une institut supérieure et cela à chaque année 
  academique.
  nous aurons 3 acteurs qui visiterons ce site:
