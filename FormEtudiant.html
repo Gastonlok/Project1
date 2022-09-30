@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaire d'enegistrement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css  ">
+  </head>
+  <body style="background-color: #b1cce2;">
+        <header>
+         <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="EspaceAdministrateur.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FormSec.html">Inscription Secretaire</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AffEtud.html">Affichage</a>
+              </li>
+          </ul>
+        </header>
+
+      <div class="container">
+            <div class="row py-5 mt-4 align-items-center">
+              <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+                  <img src="images/inbtp2.jpg" alt="" class="img-fluid mb-3 d-none d-md-block">
+                   <h1>Enregistrer Etudiant</h1>
+                  <p class="font-italic text-muted mb-0"> Enregistrer  les étudiants dans la pomotion, le département et la section respectifs.</p>
+            </div>
+
+      <!--  Formulaire d'enregistrement Etudiant -->
+      <div class=" container col-md-7 col-lg-6 ml-auto">
+            <h1>Formulaire d'Enregistrement </h1>
+          <form method="post" action="AjoutResultat.php">
+              <div class="row">
+
+                  <!-- First Name -->
+                  <div class="input-group col-lg-6 mb-4">
+                      <input id="nom" type="text" name="nom" placeholder="Nom de l'Etudiant" class="form-control bg-white border-left-0 border-md">
+                  </div>
+
+                  <!-- Last Name -->
+                  <div class="input-group col-lg-6 mb-4">
+                      <input id="postnom" type="text" name="postnom" placeholder="Postnom de l'Etudiant" class="form-control bg-white border-left-0 border-md">
+                  </div>
+                   <!-- Prenom -->
+                   <div class="input-group col-lg-6 mb-4">
+                    <input id="prenom" type="text" name="prenom" placeholder="Prenom de l'Etudiant " class="form-control bg-white border-left-0 border-md">
+                </div>
+
+                  <!-- choix -->
+                  <div class="">
+  
+                     <div class="form-check">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="homme" />Homme
+                  
+                     </div>
+                     <div class="form-check">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="etudiant" />Femme
+                  
+                     </div>
+                  </div>
+                  <select id="promotion" name="Promotion" class="form-control custom-select bg-white border-left-0 border-md">
+                    <option value="">Promotion Affectée</option>
+                    <option value="">L1 LMD</option>
+                    <option value="">L2 LMD</option>
+                    <option value="">L3 LMD</option>
+                    <option value="">G2</option>
+                    <option value="">G3</option>
+                    <option value="">L1</option> 
+                    <option value="">L2</option> 
+                </select>
+               <select id="section" name="section" class="form-control custom-select bg-white border-left-0 border-md">
+                  <option value="">Section Affectée</option>
+                  <option value="">GT</option>
+                  <option value="">...</option>
+             </select>
+             <select id="section" name="section" class="form-control custom-select bg-white border-left-0 border-md">
+                  <option value="">Département Affectée</option>
+                  <option value="">EI</option>
+                  <option value="">GC</option>
+                  <option value="">TA</option>
+             </select>
+              
+              <div class="input-group col-lg-6 mb-4">
+                  <input id="password" type="password" name="password" placeholder="Mot de Passe" class="form-control bg-white border-left-0 border-md">
+                </div>
+                  <!-- Ajouter Button -->
+                  <div class="form-group col-lg-12 mx-auto mb-0">
+                      <a href="#" class="btn btn-primary btn-block py-2">
+                          <span class="font-weight-bold">Ajouter Etudiant</span>
+                      </a>
+                  </div>
+
+                  <!-- Divider Text -->
+                  <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                      <div class="border-bottom w-100 ml-5"></div>
+                      <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+                      <div class="border-bottom w-100 mr-5"></div>
+                  </div>
+
+                  <!-- deconnexion -->
+                  <div class="text-center w-100">
+                      <p class="text-muted font-weight-bold">Voulez-vous quitter? <a href="index.html" class="text-primary ml-2">Deconnexion</a></p>
+                  </div>
+
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaire d'enegistrement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css  ">
+  </head>
+  <body>
+       <header>
+        <ul >
+            <li class="nav-item">
+              <a class="nav-link" href="EspaceAdministrateur.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FormSec.html">Inscription Cotes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="FormEtudiant.html">Inscription Etudiant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Affichage.html">Affichage</a>
+              </li>
+          </ul>
+      </header>
+
+      <div class="container">
+            <div class="row py-5 mt-4 align-items-center">
+              <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+                  <img src="images/inbtp2.jpg" alt="" class="img-fluid mb-3 d-none d-md-block">
+                   <h1>Enregistrer cotes des cours</h1>
+                  <p class="font-italic text-muted mb-0"> Enregistrer les cotes des étudiants</p>
+            </div>
+
+      <!--  Formulaire d'enregistrement Etudiant -->
+      <div class=" container col-md-7 col-lg-6 ml-auto">
+            <h1>Formulaire d'Enregistrement </h1>
+          <form method="post" action="AjoutResultat.php">
+              <div class="row">
+
+                  <!-- code Etudiant -->
+                  <div class="input-group col-lg-6 mb-4">
+                      <input id="CodeEtud" placeholder="Code Etudiant" class="form-control bg-white border-left-0 border-md">
+                  </div>
+
+
+                  </div>
+                  <form method="post" action="traitement.php">
+                    <p>
+                    <label for="cours"style="font-weight:bold";>Choisir le cours</label><br />
+                    <select name="cours" id="cours">
+                    <optgroup label="L1 LMD">
+                    <option value="france">Math</option>
+                    <option value="espagne">IRS</option>
+                    <option value="italie">STAT</option>
+                    <option value="royaume-uni">Royaume-Uni</option>
+                    </optgroup>
+                    <optgroup label="L2 LMD">
+                    <option value="canada">Canada</option>
+                    <option value="etats-unis">Etats-Unis</option>
+                    </optgroup>
+                    <optgroup label="L3 LMD">
+                    <option value="chine">Chine</option>
+                    <option value="japon">Japon</option>
+                    </optgroup>
+                    </select>
+                    </p>
+                    </form>
+                <div>
+                    <label  for="cours" style="font-weight:bold;">Pondération</label><br />
+                    <input type="number" name="" id="" placeholder="Pondération"> <br>
+                    <label for="maxima"style="font-weight:bold;">Maxima</label> <br>
+                    <input type="number"  placeholder=""> <br>
+                    <label for="" style="font-weight:bold;">cote</label> <br>
+                    <input type="number">
+                </div>
+             <label for=""style="font-weight:bold;">Remarque</label> <br>
+             <textarea name="" id="" cols="30" rows="5" ></textarea>
+              
+                  <!-- Ajouter Button -->
+                  <div class="form-group col-lg-12 mx-auto mb-0">
+                      <a href="#" class="btn btn-primary btn-block py-2">
+                          <span class="font-weight-bold">Ajouter Cote</span>
+                      </a>
+                  </div>
+
+                  <!-- Divider Text -->
+                  <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                      <div class="border-bottom w-100 ml-5"></div>
+                      <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+                      <div class="border-bottom w-100 mr-5"></div>
+                  </div>
+
+                  <!-- deconnexion -->
+                  <div class="text-center w-100">
+                      <p class="text-muted font-weight-bold">Voulez-vous quitter? <a href="index.html" class="text-primary ml-2">Deconnexion</a></p>
+                  </div>
+
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
